@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Default text color */
+}
+
+/* Header Styles */
+header {
+  background-color: #ffcc00; /* Header background color */
+  padding: 1rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center;
+}
+
+header .container .logo {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+}
+
+header .container .logo .icon {
+  background-color: gray; /* Logo icon background */
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+header .container .logo span {
+  font-weight: bold;
+  font-size: 1.25rem; /* Logo text size */
+}
+
+header .container nav a {
+  color: black; /* Default link color */
+  margin: 0 1rem; /* Space between links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+header .container nav a:hover {
+  color: #ffcc00; /* Hover color for links */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a202c; /* Dark background */
+  color: #cbd5e0; /* Light text color for dark mode */
+}
+
+body.dark-mode header {
+  background-color: #2d3748; /* Dark header background */
+}
+
+body.dark-mode a {
+  color: #ecc94b; /* Link color in dark mode */
+}
+
+body.dark-mode .bg-white {
+  background-color: #2d3748; /* Dark mode background for white elements */
+}
+
+body.dark-mode .bg-gray-300 {
+  background-color: #4a5568; /* Dark mode background for gray elements */
+}
+
+body.dark-mode .text-gray-700 {
+  color: #a0aec0; /* Dark mode text color */
+}
+
+body.dark-mode .text-yellow-500 {
+  color: #ecc94b; /* Dark mode yellow text */
+}
+
+/* Main Section Styles */
+main .section {
+  padding: 2rem 0; /* Vertical padding for sections */
+}
+
+main .section.bg-yellow {
+  background-color: #ffcc00; /* Yellow background for specific sections */
+}
+
+main .section.bg-white {
+  background-color: #ffffff; /* White background for specific sections */
+}
+
+main .section h2 {
+  color: #ffcc00; /* Heading color */
+  font-size: 1.5rem; /* Heading size */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffcc00; /* Footer background color */
+  padding: 2rem 0; /* Vertical padding for footer */
+}
+
+footer .container {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+footer .container .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Single column by default */
+  gap: 2rem; /* Space between grid items */
+}
+
+@media (min-width: 768px) {
+  footer .container .grid {
+      grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+  }
+}
+
+/* Additional Styles can be added below */

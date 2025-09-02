@@ -1,0 +1,98 @@
+// Variables
+$primary-color: #ffcc00;
+$secondary-color: #f9f9f9;
+$text-color: #333;
+$dark-bg: #1a202c;
+$light-bg: #ffffff;
+
+// Mixin for flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Global Styles
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $secondary-color;
+    color: $text-color;
+}
+
+// Header Styles
+header {
+    background-color: $primary-color;
+    padding: 1rem;
+
+    .container {
+        @include flex-center;
+        justify-content: space-between;
+
+        .logo {
+            @include flex-center;
+            .icon {
+                background-color: gray;
+                width: 2rem;
+                height: 2rem;
+                margin-right: 0.5rem;
+            }
+            span {
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+        }
+
+        nav {
+            a {
+                color: darken($text-color, 20%);
+                margin: 0 1rem;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// Main Section Styles
+main {
+    .section {
+        padding: 2rem 0;
+
+        &.bg-yellow {
+            background-color: $primary-color;
+        }
+
+        &.bg-white {
+            background-color: $light-bg;
+        }
+
+        h2 {
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+
+        // Other styles...
+    }
+}
+
+// Footer Styles
+footer {
+    background-color: $primary-color;
+    padding: 2rem 0;
+
+    .container {
+        @include flex-center;
+        flex-direction: column;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
