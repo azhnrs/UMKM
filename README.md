@@ -51,7 +51,7 @@ Project ini dibuat sebagai implementasi dari materi yang dipelajari dalam bootca
 1. **Clone repository**
    ```bash
    git clone https://github.com/username/mellani-snack.git
-   cd mellani-snack
+   cd UMKM
    ```
 
 2. **Buka project**
